@@ -16,7 +16,7 @@ public class Gesture {
 	
 	public void scrollDown(){
 		int swipeStartY = (int) (screenSize.height * 0.5);
-		int swipeEndY = (int) (screenSize.height * 0.2);
+		int swipeEndY = (int) (screenSize.height * 0.1);
 		int swipeStartX = (int) (screenSize.width / 2);
 		int duration = 3000;
 

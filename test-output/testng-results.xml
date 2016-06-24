@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36410" started-at="2016-06-24T12:08:37Z" finished-at="2016-06-24T12:09:14Z">
+  <suite name="Default suite" duration-ms="42599" started-at="2016-06-24T13:19:14Z" finished-at="2016-06-24T13:19:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36410" started-at="2016-06-24T12:08:37Z" finished-at="2016-06-24T12:09:14Z">
+    <test name="Default test" duration-ms="42599" started-at="2016-06-24T13:19:14Z" finished-at="2016-06-24T13:19:57Z">
       <class name="automation.Appium">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:automation.Appium@100df86]" name="setUp" is-config="true" duration-ms="10846" started-at="2016-06-24T14:08:37Z" finished-at="2016-06-24T14:08:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:automation.Appium@100df86]" name="setUp" is-config="true" duration-ms="13885" started-at="2016-06-24T15:19:14Z" finished-at="2016-06-24T15:19:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="returnToMainPage()[pri:0, instance:automation.Appium@100df86]" name="returnToMainPage" is-config="true" duration-ms="4801" started-at="2016-06-24T14:08:48Z" finished-at="2016-06-24T14:08:53Z">
+        <test-method status="PASS" signature="returnToMainPage()[pri:0, instance:automation.Appium@100df86]" name="returnToMainPage" is-config="true" duration-ms="7971" started-at="2016-06-24T15:19:28Z" finished-at="2016-06-24T15:19:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- returnToMainPage -->
-        <test-method status="PASS" signature="addSpeakerToFavourite()[pri:0, instance:automation.Appium@100df86]" name="addSpeakerToFavourite" duration-ms="11827" started-at="2016-06-24T14:08:53Z" finished-at="2016-06-24T14:09:05Z">
+        <test-method status="PASS" signature="addSpeakerToFavourite()[pri:0, instance:automation.Appium@100df86]" name="addSpeakerToFavourite" duration-ms="10180" started-at="2016-06-24T15:19:36Z" finished-at="2016-06-24T15:19:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addSpeakerToFavourite -->
-        <test-method status="PASS" signature="returnToMainPage()[pri:0, instance:automation.Appium@100df86]" name="returnToMainPage" is-config="true" duration-ms="648" started-at="2016-06-24T14:09:05Z" finished-at="2016-06-24T14:09:05Z">
+        <test-method status="PASS" signature="returnToMainPage()[pri:0, instance:automation.Appium@100df86]" name="returnToMainPage" is-config="true" duration-ms="690" started-at="2016-06-24T15:19:46Z" finished-at="2016-06-24T15:19:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- returnToMainPage -->
-        <test-method status="PASS" signature="newsReadArticle()[pri:0, instance:automation.Appium@100df86]" name="newsReadArticle" duration-ms="7102" started-at="2016-06-24T14:09:05Z" finished-at="2016-06-24T14:09:12Z">
+        <test-method status="PASS" signature="facebookButtonClick()[pri:0, instance:automation.Appium@100df86]" name="facebookButtonClick" duration-ms="8631" started-at="2016-06-24T15:19:47Z" finished-at="2016-06-24T15:19:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newsReadArticle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.Appium@100df86]" name="tearDown" is-config="true" duration-ms="1123" started-at="2016-06-24T14:09:12Z" finished-at="2016-06-24T14:09:14Z">
+        </test-method> <!-- facebookButtonClick -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.Appium@100df86]" name="tearDown" is-config="true" duration-ms="1182" started-at="2016-06-24T15:19:55Z" finished-at="2016-06-24T15:19:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

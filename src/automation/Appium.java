@@ -2,6 +2,9 @@ package automation;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import javax.swing.JOptionPane;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -9,8 +12,10 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,6 +27,7 @@ import org.testng.Assert;
 public class Appium {
 
 	private AndroidDriver<AndroidElement> driver;
+	private WebElement chromeDriver;
 
 	private MainPage mainPage;
 	private NewsPage newsPage;
@@ -154,10 +160,10 @@ public class Appium {
 		Assert.assertEquals(newsTileTitle, newsExpectedHeader);
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void newsReadArticle(){
 		newsPage = mainPage.navigateToNewsPage();
-		
+				
 		int id = 1;
 		String articleTitleOnTheList = newsPage.getArticleTitleOnTheList(id);
 		articlePage = newsPage.openArticle(id);
@@ -263,13 +269,17 @@ public class Appium {
 		Assert.assertEquals(aboutTestingCupTileTitle, aboutExpectedHeader);
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void facebookButtonClick() {
-		//swipeVertically();
+		mainPage.waitForElement(mainTitle);
 		gesture.scrollDown();
+
 		facebook = mainPage.navigateToFacebook();
 		String facebookExpectedUrl = facebook.getExpectedUrl();
-		String facebookActualUrl = facebook.getDriver().getCurrentUrl();
+		//this is the key!
+		String facebookActualUrl = driver.findElementById("com.android.chrome:id/url_bar").getText();
+		
+		driver.navigate().back();
 
 		Assert.assertEquals(facebookExpectedUrl, facebookActualUrl);
 	}

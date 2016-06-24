@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="newsReadArticle"/>
+          <include name="facebookButtonClick"/>
           <include name="returnToMainPage"/>
         </methods>
       </class> <!-- automation.Appium -->
