@@ -5,9 +5,9 @@
     <classes>
       <class name="automation.Appium">
         <methods>
+          <include name="menuLogoClick"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="facebookButtonClick"/>
           <include name="returnToMainPage"/>
         </methods>
       </class> <!-- automation.Appium -->

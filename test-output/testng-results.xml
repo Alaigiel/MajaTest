@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42599" started-at="2016-06-24T13:19:14Z" finished-at="2016-06-24T13:19:57Z">
+  <suite name="Default suite" duration-ms="23195" started-at="2016-06-24T13:33:24Z" finished-at="2016-06-24T13:33:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42599" started-at="2016-06-24T13:19:14Z" finished-at="2016-06-24T13:19:57Z">
+    <test name="Default test" duration-ms="23195" started-at="2016-06-24T13:33:24Z" finished-at="2016-06-24T13:33:47Z">
       <class name="automation.Appium">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:automation.Appium@100df86]" name="setUp" is-config="true" duration-ms="13885" started-at="2016-06-24T15:19:14Z" finished-at="2016-06-24T15:19:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:automation.Appium@100df86]" name="setUp" is-config="true" duration-ms="10268" started-at="2016-06-24T15:33:24Z" finished-at="2016-06-24T15:33:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="returnToMainPage()[pri:0, instance:automation.Appium@100df86]" name="returnToMainPage" is-config="true" duration-ms="7971" started-at="2016-06-24T15:19:28Z" finished-at="2016-06-24T15:19:36Z">
+        <test-method status="PASS" signature="returnToMainPage()[pri:0, instance:automation.Appium@100df86]" name="returnToMainPage" is-config="true" duration-ms="3904" started-at="2016-06-24T15:33:34Z" finished-at="2016-06-24T15:33:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- returnToMainPage -->
-        <test-method status="PASS" signature="addSpeakerToFavourite()[pri:0, instance:automation.Appium@100df86]" name="addSpeakerToFavourite" duration-ms="10180" started-at="2016-06-24T15:19:36Z" finished-at="2016-06-24T15:19:46Z">
+        <test-method status="PASS" signature="menuLogoClick()[pri:0, instance:automation.Appium@100df86]" name="menuLogoClick" duration-ms="8015" started-at="2016-06-24T15:33:38Z" finished-at="2016-06-24T15:33:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addSpeakerToFavourite -->
-        <test-method status="PASS" signature="returnToMainPage()[pri:0, instance:automation.Appium@100df86]" name="returnToMainPage" is-config="true" duration-ms="690" started-at="2016-06-24T15:19:46Z" finished-at="2016-06-24T15:19:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- returnToMainPage -->
-        <test-method status="PASS" signature="facebookButtonClick()[pri:0, instance:automation.Appium@100df86]" name="facebookButtonClick" duration-ms="8631" started-at="2016-06-24T15:19:47Z" finished-at="2016-06-24T15:19:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- facebookButtonClick -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.Appium@100df86]" name="tearDown" is-config="true" duration-ms="1182" started-at="2016-06-24T15:19:55Z" finished-at="2016-06-24T15:19:57Z">
+        </test-method> <!-- menuLogoClick -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.Appium@100df86]" name="tearDown" is-config="true" duration-ms="965" started-at="2016-06-24T15:33:46Z" finished-at="2016-06-24T15:33:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

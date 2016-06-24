@@ -62,9 +62,15 @@ public class Menu extends BasePage{
 	@AndroidFindBy(id = "com.testingcup:id/program_drawer_text")
 	private AndroidElement aboutAppMenuText;
 	
+	private static String companyWebPage = "21cn.pl";
+	
 	public Menu(AndroidDriver<AndroidElement> driver) {
 		super(driver);
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+	}
+	
+	public String getCompanyWebPageUrl(){
+		return companyWebPage;
 	}
 	
 	public String getNewsMenuText(){
@@ -150,5 +156,10 @@ public class Menu extends BasePage{
 		waitAndClickElement(aboutAppMenuText);
 		
 		return new AboutApplicationPage(driver);
+	}
+	
+	public void navigateToCompanyWebPage(){
+		waitAndClickElement(menu);
+		waitAndClickElement(logo21cn);
 	}
 }

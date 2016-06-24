@@ -269,7 +269,7 @@ public class Appium {
 		Assert.assertEquals(aboutTestingCupTileTitle, aboutExpectedHeader);
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void facebookButtonClick() {
 		mainPage.waitForElement(mainTitle);
 		gesture.scrollDown();
@@ -282,6 +282,20 @@ public class Appium {
 		driver.navigate().back();
 
 		Assert.assertEquals(facebookExpectedUrl, facebookActualUrl);
+	}
+	
+	@Test
+	public void menuLogoClick(){
+		mainPage.waitForElement(mainTitle);
+		menu = new Menu(driver);
+		menu.navigateToCompanyWebPage();
+		
+		String companyExpectedUrl = menu.getCompanyWebPageUrl();
+		String companyActualUrl = driver.findElementById("com.android.chrome:id/url_bar").getText();
+		
+		driver.navigate().back();
+		
+		Assert.assertEquals(companyActualUrl, companyExpectedUrl);
 	}
 
 	@Test(enabled = false)
@@ -418,7 +432,7 @@ public class Appium {
 		Assert.assertEquals(pointsGained.isEmpty(), false);
 	}
 	
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void addSpeakerToFavourite(){
 		speakersPage = mainPage.navigateToSpeakersPage();		
 		int id = 2;
